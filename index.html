@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js https://cdn.jsdelivr.net/npm/lenis@1.3.27/dist/lenis.min.js; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; img-src 'self' https://images.unsplash.com data:; font-src 'self' https://fonts.gstatic.com data:; frame-src https://www.google.com https://maps.google.com; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests" />
+    <title>Treinna Fit | Academia em São Bernardo do Campo</title>
+    <meta
+      name="description"
+      content="Conheça a Treinna Fit em São Bernardo do Campo. Musculação, funcional, Muay Thai e outras modalidades. Consulte nossos planos e comece sua evolução."
+    />
+    <meta property="og:title" content="Treinna Fit | Academia em São Bernardo do Campo" />
+    <meta
+      property="og:description"
+      content="Transforme sua rotina, desafie seus limites e descubra sua melhor versão na Treinna Fit."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=80" />
+    <meta name="theme-color" content="#080609" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/animations.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <noscript>
+      <style>
+        .faq-answer { max-height: none !important; overflow: visible !important; padding: 0 1.4rem 1.4rem !important; visibility: visible !important; }
+        @media (max-width: 980px) {
+          .site-nav { position: static; inset: auto; display: block; width: 100%; background: transparent; opacity: 1; visibility: visible; pointer-events: auto; backdrop-filter: none; }
+          .site-nav ul { flex-direction: row; flex-wrap: wrap; justify-content: center; gap: .5rem .8rem; }
+          .site-nav a { font-size: .66rem; letter-spacing: .04em; }
+          .nav-toggle, .nav-wrap .nav-cta { display: none; }
+          .nav-wrap { min-height: auto; flex-wrap: wrap; padding: .65rem 0; }
+        }
+      </style>
+    </noscript>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ExerciseGym",
+        "name": "Treinna Fit",
+        "image": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=80",
+        "description": "Academia em São Bernardo do Campo com musculação, funcional, Muay Thai e outras modalidades.",
+        "telephone": "+55 11 97315-0980",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Avenida Dom Pedro de Alcântara, 187",
+          "addressLocality": "São Bernardo do Campo",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        },
+        "openingHours": [
+          "Mo-Fr 06:00-23:00",
+          "Sa 09:00-13:00",
+          "Su 09:00-13:00"
+        ],
+        "sameAs": [
+          "https://www.instagram.com/treinnafit/",
+          "https://wa.me/5511973150980"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+    <div class="custom-cursor" aria-hidden="true">
+      <span class="cursor-core"></span>
+    </div>
+
+    <div class="preloader" role="status" aria-live="polite" aria-label="Carregando Treinna Fit">
+      <div class="preloader-inner">
+        <img class="preloader-logo" src="assets/images/treinna-fit-logo.jpg" alt="" width="112" height="112" />
+        <div class="preloader-word" data-split>Treinna Fit</div>
+        <div class="preloader-line"></div>
+        <div class="preloader-loading">Carregando</div>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#top" aria-label="Voltar ao início">
+          <img class="brand-logo-image" src="assets/images/treinna-fit-logo.jpg" alt="" width="88" height="88" />
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
+          <ul>
+            <li><a href="#top">Início</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#modalities">Modalidades</a></li>
+            <li><a href="#structure">Estrutura</a></li>
+            <li><a href="#plans">Planos</a></li>
+            <li><a href="#reviews">Avaliações</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </nav>
+        <a class="button button-primary nav-cta" href="https://wa.me/5511973150980?text=Ol%C3%A1!%20Conheci%20a%20Treinna%20Fit%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20planos%20e%20valores%20dispon%C3%ADveis." target="_blank" rel="noopener noreferrer">COMECE AGORA <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="top">
+        <div class="hero-video" aria-hidden="true"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <p class="eyebrow reveal">Academia premium em São Bernardo do Campo</p>
+          <h1 class="title hero-title split" data-split>
+            SEU LIMITE É APENAS O COMEÇO.
+          </h1>
+          <p class="hero-text reveal delay-1 js-split">
+            Transforme sua rotina, desafie seus limites e descubra sua melhor versão na Treinna Fit.
+          </p>
+          <div class="hero-actions reveal delay-2">
+            <a class="button button-primary" href="https://wa.me/5511973150980?text=Ol%C3%A1!%20Quero%20come%C3%A7ar%20minha%20transforma%C3%A7%C3%A3o%20na%20Treinna%20Fit." target="_blank" rel="noopener noreferrer">COMECE SUA TRANSFORMAÇÃO <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="#about">CONHEÇA A ACADEMIA <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-metrics reveal delay-3" aria-label="Estatísticas principais da academia">
+            <div>
+              <span>Modalidades</span>
+              <strong>6+</strong>
+            </div>
+            <div>
+              <span>Ambiente</span>
+              <strong>Premium</strong>
+            </div>
+            <div>
+              <span>Local</span>
+              <strong>São Bernardo</strong>
+            </div>
+          </div>
+        </div>
+        <a class="scroll-indicator" href="#about" aria-label="Rolar para a seção Sobre">
+          <span></span>
+        </a>
+      </section>
+
+      <div class="marquee-wrap" aria-hidden="true">
+        <div class="marquee-track">
+          <span>FORÇA</span>
+          <span>•</span>
+          <span>MOVIMENTO</span>
+          <span>•</span>
+          <span>DISCIPLINA</span>
+          <span>•</span>
+          <span>EVOLUÇÃO</span>
+          <span>•</span>
+          <span>TREINNA FIT</span>
+          <span>•</span>
+          <span>FORÇA</span>
+          <span>•</span>
+          <span>MOVIMENTO</span>
+          <span>•</span>
+          <span>DISCIPLINA</span>
+          <span>•</span>
+          <span>EVOLUÇÃO</span>
+          <span>•</span>
+          <span>TREINNA FIT</span>
+        </div>
+      </div>
+
+      <section class="section intro-gallery" aria-labelledby="intro-gallery-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-tag">Treinna Fit em movimento</p>
+            <h2 class="title split" id="intro-gallery-title" data-split>ENERGIA PARA IR MAIS LONGE.</h2>
+            <p>Um espaço para treinar com foco, superar desafios e evoluir no seu ritmo.</p>
+          </div>
+        </div>
+        <div class="intro-gallery-viewport" role="region" tabindex="0" aria-label="Galeria de ambientes e treinos da Treinna Fit">
+          <div class="intro-gallery-track">
+            <figure class="intro-gallery-item">
+              <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80" alt="Área de musculação com equipamentos de academia" loading="lazy" />
+              <figcaption>Estrutura para evoluir</figcaption>
+            </figure>
+            <figure class="intro-gallery-item">
+              <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=80" alt="Pessoa treinando com pesos em uma academia" loading="lazy" />
+              <figcaption>Força e constância</figcaption>
+            </figure>
+            <figure class="intro-gallery-item">
+              <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=1200&q=80" alt="Equipamentos organizados em uma academia moderna" loading="lazy" />
+              <figcaption>Seu próximo passo</figcaption>
+            </figure>
+            <figure class="intro-gallery-item">
+              <img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?auto=format&fit=crop&w=1200&q=80" alt="Treino funcional em grupo" loading="lazy" />
+              <figcaption>Movimento em equipe</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="container about-grid">
+          <div class="about-media reveal-image">
+            <div class="image-card">
+                <img
+                src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=900&q=80"
+                alt="Imagem ilustrativa de pessoas treinando em uma academia moderna"
+                loading="lazy"
+              />
+            </div>
+            <div class="about-number">01</div>
+          </div>
+
+          <div class="about-copy">
+            <p class="section-tag reveal">Sobre a Treinna Fit</p>
+            <h2 class="title split" data-split>MAIS QUE UMA ACADEMIA. UM NOVO CAPÍTULO DA SUA EVOLUÇÃO.</h2>
+            <div class="copy-stack">
+                <p class="reveal js-split">Localizada em São Bernardo do Campo, a Treinna Fit reúne diferentes modalidades de treinamento em um ambiente dedicado ao movimento, à saúde e ao desenvolvimento físico.</p>
+                <p class="reveal js-split">Seja para desenvolver força, melhorar o condicionamento ou construir uma rotina mais ativa, aqui você encontra possibilidades para seguir evoluindo.</p>
+            </div>
+            <div class="divider reveal"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section modalities" id="modalities">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-tag">Modalidades</p>
+            <h2 class="title split" data-split>ENCONTRE SEU RITMO. SUPERE SEUS LIMITES.</h2>
+              <p class="js-split">Descubra diferentes formas de se movimentar e escolha a experiência que combina com você.</p>
+            <p class="image-disclaimer">Imagens ilustrativas; confirme modalidades e horários disponíveis diretamente com a equipe.</p>
+          </div>
+
+          <div class="modalities-grid">
+            <article class="modality-card reveal-card">
+              <div class="modality-image">
+                <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=900&q=80" alt="Imagem ilustrativa de treino de musculação" loading="lazy" />
+              </div>
+              <div class="modality-content">
+                <span class="modality-index">01</span>
+                <h3>MUSCULAÇÃO</h3>
+                <p>Desenvolva força, resistência e condicionamento com treinos voltados à sua evolução.</p>
+                <a class="modality-cta" href="https://wa.me/5511973150980?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20hor%C3%A1rios%20e%20disponibilidade%20de%20muscula%C3%A7%C3%A3o%20na%20Treinna%20Fit." target="_blank" rel="noopener noreferrer">CONSULTAR HORÁRIOS <span aria-hidden="true">↗</span></a>
+                <span class="modality-arrow" aria-hidden="true">↗</span>
+              </div>
+            </article>
+
+            <article class="modality-card reveal-card">
+              <div class="modality-image">
+                <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=900&q=80" alt="Imagem ilustrativa de treinamento funcional" loading="lazy" />
+              </div>
+              <div class="modality-content">
+                <span class="modality-index">02</span>
+                <h3>TREINAMENTO FUNCIONAL</h3>
+                <p>Explore movimentos dinâmicos e desenvolva capacidades físicas para o dia a dia.</p>
+                <a class="modality-cta" href="https://wa.me/5511973150980?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20hor%C3%A1rios%20e%20disponibilidade%20de%20treinamento%20funcional%20na%20Treinna%20Fit." target="_blank" rel="noopener noreferrer">CONSULTAR HORÁRIOS <span aria-hidden="true">↗</span></a>
+                <span class="modality-arrow" aria-hidden="true">↗</span>
+              </div>
+            </article>
+
+            <article class="modality-card reveal-card">
+              <div class="modality-image">
+                <img src="https://images.unsplash.com/photo-1541534401786-2077eed87a74?auto=format&fit=crop&w=900&q=80" alt="Imagem ilustrativa de treino HIIT" loading="lazy" />
+              </div>
+              <div class="modality-content">
+                <span class="modality-index">03</span>
+                <h3>HIIT</h3>
+                <p>Treinamentos intervalados de alta intensidade para quem busca desafios e condicionamento.</p>
+                <a class="modality-cta" href="https://wa.me/5511973150980?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20hor%C3%A1rios%20e%20disponibilidade%20de%20HIIT%20na%20Treinna%20Fit." target="_blank" rel="noopener noreferrer">CONSULTAR HORÁRIOS <span aria-hidden="true">↗</span></a>
+                <span class="modality-arrow" aria-hidden="true">↗</span>
+              </div>
+            </article>
+
+            <article class="modality-card reveal-card">
+              <div class="modality-image">
+                <img src="https://images.unsplash.com/photo-1554284126-aa88f22d8b74?auto=format&fit=crop&w=900&q=80" alt="Imagem ilustrativa de prática de Muay Thai" loading="lazy" />
+              </div>
+              <div class="modality-content">
+                <span class="modality-index">04</span>
+                <h3>MUAY THAI</h3>
+                <p>Uma modalidade que combina técnica, disciplina, coordenação e condicionamento físico.</p>
+                <a class="modality-cta" href="https://wa.me/5511973150980?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20hor%C3%A1rios%20e%20disponibilidade%20de%20Muay%20Thai%20na%20Treinna%20Fit." target="_blank" rel="noopener noreferrer">CONSULTAR HORÁRIOS <span aria-hidden="true">↗</span></a>
+                <span class="modality-arrow" aria-hidden="true">↗</span>
+              </div>
+            </article>
+
+            <article class="modality-card reveal-card">
+              <div class="modality-image">
+                <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=900&q=80" alt="Imagem ilustrativa de aula de dança e ritmos" loading="lazy" />
+              </div>
+              <div class="modality-content">
+                <span class="modality-index">05</span>
+                <h3>DANÇA E RITMOS</h3>
+                <p>Movimento, energia e diversão em atividades que combinam música e exercício.</p>
+                <a class="modality-cta" href="https://wa.me/5511973150980?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20hor%C3%A1rios%20e%20disponibilidade%20de%20dan%C3%A7a%20e%20ritmos%20na%20Treinna%20Fit." target="_blank" rel="noopener noreferrer">CONSULTAR HORÁRIOS <span aria-hidden="true">↗</span></a>
+                <span class="modality-arrow" aria-hidden="true">↗</span>
+              </div>
+            </article>
+
+            <article class="modality-card reveal-card">
+              <div class="modality-image">
+                <img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?auto=format&fit=crop&w=900&q=80" alt="Imagem ilustrativa de treino de jump e step" loading="lazy" />
+              </div>
+              <div class="modality-content">
+                <span class="modality-index">06</span>
+                <h3>JUMP E STEP</h3>
+                <p>Modalidades dinâmicas que trabalham coordenação, resistência e capacidade cardiovascular.</p>
+                <a class="modality-cta" href="https://wa.me/5511973150980?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20hor%C3%A1rios%20e%20disponibilidade%20de%20jump%20e%20step%20na%20Treinna%20Fit." target="_blank" rel="noopener noreferrer">CONSULTAR HORÁRIOS <span aria-hidden="true">↗</span></a>
+                <span class="modality-arrow" aria-hidden="true">↗</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section structure" id="structure">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-tag">Estrutura</p>
+            <h2 class="title split" data-split>UM ESPAÇO PARA A SUA EVOLUÇÃO.</h2>
+          </div>
+          <div class="structure-gallery">
+            <figure class="gallery-item tall reveal-image">
+              <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=900&q=80" alt="Imagem ilustrativa de uma área de musculação com equipamentos" loading="lazy" />
+              <figcaption>Equipamentos de musculação</figcaption>
+            </figure>
+            <figure class="gallery-item reveal-image">
+              <img src="https://images.unsplash.com/photo-1521805100850-8bf1b0d8f7d2?auto=format&fit=crop&w=900&q=80" alt="Imagem ilustrativa de um vestiário com armários" loading="lazy" />
+              <figcaption>Vestiários e armários</figcaption>
+            </figure>
+            <figure class="gallery-item reveal-image">
+              <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=900&q=80" alt="Imagem ilustrativa de uma área de treino em academia" loading="lazy" />
+              <figcaption>Wi‑Fi e conforto para sua rotina</figcaption>
+            </figure>
+            <figure class="gallery-item wide reveal-image">
+              <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1?auto=format&fit=crop&w=1200&q=80" alt="Imagem ilustrativa de artigos esportivos" loading="lazy" />
+              <figcaption>Loja de artigos esportivos</figcaption>
+            </figure>
+          </div>
+
+          <p class="gallery-note">Imagens ilustrativas. Consulte a equipe para conhecer a estrutura atual da unidade.</p>
+          <ul class="structure-features reveal">
+            <li>Equipamentos de musculação</li>
+            <li>Vestiários</li>
+            <li>Armários</li>
+            <li>Wi‑Fi</li>
+            <li>Itens de higiene pessoal</li>
+            <li>Loja de artigos esportivos</li>
+            <li>Serviço de nutrição listado publicamente, sujeito à confirmação de disponibilidade e condições</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section plans" id="plans">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-tag">Planos</p>
+            <h2 class="title split" data-split>O PRÓXIMO PASSO É SEU.</h2>
+              <p class="js-split">Conheça as opções disponíveis e encontre a melhor maneira de começar sua jornada.</p>
+          </div>
+
+          <div class="plan-card reveal">
+            <div class="plan-card__content">
+              <p class="plan-kicker">Consulta exclusiva</p>
+              <h3>CONHEÇA NOSSOS PLANOS</h3>
+                <p class="js-split">Entre em contato com a equipe e consulte valores, modalidades e condições de matrícula.</p>
+            </div>
+            <div class="plan-card__cta">
+              <a class="button button-primary" href="https://wa.me/5511973150980?text=Ol%C3%A1!%20Conheci%20a%20Treinna%20Fit%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20planos%20e%20valores%20dispon%C3%ADveis." target="_blank" rel="noopener noreferrer">CONSULTAR PLANOS NO WHATSAPP <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reviews" id="reviews">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-tag">Avaliações</p>
+            <h2 class="title split" data-split>QUEM TREINA, SENTE A DIFERENÇA.</h2>
+          </div>
+
+          <div class="review-placeholder reveal">
+            <div class="review-score">
+              <span class="score-label">Comunidade Treinna Fit</span>
+              <strong>Sua voz.</strong>
+              <small>Depoimentos serão publicados após validação e autorização.</small>
+            </div>
+            <div class="review-message">
+              <p>Este espaço está preparado para receber depoimentos reais, publicados somente após validação e autorização.</p>
+              <a class="button button-secondary" href="https://wa.me/5511973150980?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20a%20Treinna%20Fit%20e%20tirar%20d%C3%BAvidas%20sobre%20a%20academia." target="_blank" rel="noopener noreferrer">CONHECER A ACADEMIA <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section location" id="contact">
+        <div class="container location-grid">
+          <div class="location-copy reveal">
+            <p class="section-tag">Localização</p>
+            <h2 class="title split" data-split>SUA EVOLUÇÃO TEM ENDEREÇO.</h2>
+            <div class="location-info">
+              <h3>Treinna Fit</h3>
+              <p>Avenida Dom Pedro de Alcântara, 187<br />São Bernardo do Campo — SP</p>
+              <div class="hours">
+                <p><strong>Segunda a sexta:</strong> 06h às 23h</p>
+                <p><strong>Sábado:</strong> 09h às 13h</p>
+                <p><strong>Domingo:</strong> 09h às 13h</p>
+                <p><small>Feriados: consultar a academia.</small></p>
+                <p><small>Horários podem sofrer alterações.</small></p>
+              </div>
+            </div>
+            <div class="location-actions">
+              <a class="button button-primary" href="https://maps.google.com/?q=Avenida+Dom+Pedro+de+Alc%C3%A2ntara,+187,+S%C3%A3o+Bernardo+do+Campo+-+SP" target="_blank" rel="noopener noreferrer">COMO CHEGAR <span aria-hidden="true">↗</span></a>
+              <a class="button button-secondary" href="https://wa.me/5511973150980?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20a%20equipe%20da%20Treinna%20Fit." target="_blank" rel="noopener noreferrer">FALE COM A EQUIPE <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <div class="map-wrap reveal-image">
+            <iframe
+              title="Mapa da Treinna Fit"
+              src="https://www.google.com/maps?q=Avenida%20Dom%20Pedro%20de%20Alc%C3%A2ntara%20187%20S%C3%A3o%20Bernardo%20do%20Campo%20SP&z=15&output=embed"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen=""
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq" id="faq">
+        <div class="container faq-wrap">
+          <div class="section-heading reveal">
+            <p class="section-tag">FAQ</p>
+            <h2 class="title split" data-split>PERGUNTAS FREQUENTES</h2>
+          </div>
+
+          <div class="faq-list">
+            <article class="faq-item is-open reveal">
+              <button class="faq-question" type="button" aria-expanded="true">
+                <span>Quais modalidades a Treinna Fit oferece?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-answer">
+                <p>A academia oferece modalidades como musculação, treinamento funcional, HIIT, Muay Thai, dança e ritmos e jump e step. Estas modalidades devem ser confirmadas quanto à disponibilidade atual antes da publicação definitiva.</p>
+              </div>
+            </article>
+
+            <article class="faq-item reveal">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Onde fica localizada a academia?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-answer">
+                <p>A Treinna Fit está localizada na Avenida Dom Pedro de Alcântara, 187, em São Bernardo do Campo — SP.</p>
+              </div>
+            </article>
+
+            <article class="faq-item reveal">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Qual é o horário de funcionamento?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-answer">
+                <p>Segunda a sexta: 06h às 23h. Sábado e domingo: 09h às 13h. Feriados: consultar a academia. Horários podem sofrer alterações.</p>
+              </div>
+            </article>
+
+            <article class="faq-item reveal">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Como posso consultar os planos?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-answer">
+                <p>Entre em contato com a equipe pelo WhatsApp para consultar valores, modalidades e condições de matrícula.</p>
+              </div>
+            </article>
+
+            <article class="faq-item reveal">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Como entrar em contato?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-answer">
+                <p>Você pode conversar com a equipe via WhatsApp no número +55 11 97315-0980 ou pelo Instagram da academia.</p>
+              </div>
+            </article>
+
+            <article class="faq-item reveal">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Posso conhecer a academia antes de me matricular?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-answer">
+                <p>Sim. Recomendamos entrar em contato com a equipe para agendar uma visita e confirmar a disponibilidade antes da sua ida.</p>
+              </div>
+            </article>
+
+            <article class="faq-item reveal">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Quais serviços e comodidades estão disponíveis?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-answer">
+                <p>Entre os serviços e comodidades mencionados publicamente estão equipamentos de musculação, vestiários, armários, Wi‑Fi, itens de higiene pessoal, loja de artigos esportivos e serviço de nutrição, sujeitos à confirmação.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cta-section">
+        <div class="cta-bg" aria-hidden="true"></div>
+        <div class="container cta-content reveal">
+          <p class="section-tag">Sua transformação começa agora</p>
+          <h2 class="title split" data-split data-text-animation="scrub">O SEU PRÓXIMO NÍVEL COMEÇA AGORA.</h2>
+            <p class="js-split">Todo grande resultado começa com uma decisão. Dê o primeiro passo com a Treinna Fit.</p>
+          <a class="button button-primary" href="https://wa.me/5511973150980?text=Ol%C3%A1!%20Quero%20come%C3%A7ar%20minha%20transforma%C3%A7%C3%A3o%20na%20Treinna%20Fit." target="_blank" rel="noopener noreferrer">QUERO COMEÇAR AGORA <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <div class="footer-brand reveal">
+          <span class="brand footer-logo">
+            <img class="brand-logo-image" src="assets/images/treinna-fit-logo.jpg" alt="Logo Treinna Fit" width="112" height="112" loading="lazy" />
+          </span>
+          <p>Movimento. Disciplina. Evolução.</p>
+        </div>
+
+        <nav class="footer-nav reveal" aria-label="Links do rodapé">
+          <a href="#top">Início</a>
+          <a href="#about">Sobre</a>
+          <a href="#modalities">Modalidades</a>
+          <a href="#structure">Estrutura</a>
+          <a href="#plans">Planos</a>
+          <a href="#contact">Contato</a>
+        </nav>
+
+        <nav class="footer-social reveal" aria-label="Redes sociais">
+          <a href="https://www.instagram.com/treinnafit/" target="_blank" rel="noopener noreferrer" aria-label="Instagram da Treinna Fit">Instagram</a>
+          <a href="https://wa.me/5511973150980" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp da Treinna Fit">WhatsApp</a>
+        </nav>
+
+        <div class="footer-address reveal">
+          <p>Avenida Dom Pedro de Alcântara, 187 — São Bernardo do Campo, SP.</p>
+        </div>
+      </div>
+      <div class="footer-bottom reveal">
+        <div class="container">
+          <span>© <span id="year">2026</span> Treinna Fit</span>
+          <button class="back-to-top" type="button" aria-label="Voltar ao topo">↑</button>
+        </div>
+      </div>
+    </footer>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/lenis@1.3.27/dist/lenis.min.js"></script>
+    <script defer src="assets/js/data.js"></script>
+    <script defer src="assets/js/animations.js"></script>
+    <script defer src="assets/js/text-animations.js"></script>
+    <script defer src="assets/js/main.js"></script>
+  </body>
+</html>

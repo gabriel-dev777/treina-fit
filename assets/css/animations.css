@@ -1,0 +1,84 @@
+.preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  background: radial-gradient(ellipse at 50% 42%, #170C26, #080609 68%);
+  transition: opacity 0.7s ease, visibility 0.7s ease;
+}
+
+.preloader.is-active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.preloader.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.preloader-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.preloader-logo {
+  width: clamp(5rem, 12vw, 9rem);
+  height: auto;
+  object-fit: contain;
+  mix-blend-mode: screen;
+}
+
+.preloader-word {
+  font-family: "Anton", sans-serif;
+  font-size: clamp(3.5rem, 8vw, 9rem);
+  letter-spacing: 0.08em;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.preloader-line {
+  width: min(40vw, 22rem);
+  height: 2px;
+  background: linear-gradient(90deg, rgba(168,85,247,0), rgba(168,85,247,0.92), rgba(112,36,196,0.25), rgba(168,85,247,0));
+  box-shadow: 0 0 14px rgba(112,36,196,0.38);
+  transform-origin: left center;
+  transform: scaleX(0);
+}
+
+.preloader-loading {
+  font-size: 0.7rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: rgba(245,245,245,0.76);
+}
+
+[data-split].is-ready .word {
+  opacity: 1 !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .marquee-track {
+    animation: none;
+  }
+
+  .preloader {
+    display: none;
+  }
+}
